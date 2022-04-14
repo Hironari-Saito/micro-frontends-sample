@@ -42,3 +42,12 @@ Container should be able to decide to always use the latest version of a microfr
 - Install dependencies
 - Create a production build using webpack
 - Upload the result to AWS S3
+
+## Multi-Tier Navigation
+1. Both the Container + Individual SubApps need routing features
+2. Sub-apps might need to add in new pages/routes all the time
+3. We might need to show two or more microfrontends at the same time
+4. We want to use off-the-shelf routing solutions
+5. We need navigation features for sub-apps in both hosted mode and in isolation
+6. If different apps need to communicate information about routing, it should be done in as generic a fashion as possible
+
