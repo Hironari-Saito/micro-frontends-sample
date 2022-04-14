@@ -51,3 +51,10 @@ Container should be able to decide to always use the latest version of a microfr
 5. We need navigation features for sub-apps in both hosted mode and in isolation
 6. If different apps need to communicate information about routing, it should be done in as generic a fashion as possible
 
+## Notes Around Authentication
+- Auth app is for signing in/up users
+- Auth app `is not for` enforcing permissions, allowing access to certain routes, or figuring out if user is signed in
+
+- Two approaches for handling auth
+1. Each app is aware of auth
+2. centralize auth in Container app
