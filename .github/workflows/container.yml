@@ -4,11 +4,13 @@ on:
     branches:
       - main
     paths:
-      - 'packages/container/**'
+      - 'container/**'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 defaults:
   run:
-    working-directory: packages/container
+    working-directory: container
 
 jobs:
   build:
