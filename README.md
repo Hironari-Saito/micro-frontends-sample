@@ -27,3 +27,12 @@ Container should be able to decide to always use the latest version of a microfr
 
 1. Container will always use the latest version of a child app (doesn't require a redeploy of container)
 2. Container can specify exactly waht version of a child it wants to use (requires a redeploy to change)
+
+
+## Deployment
+
+- Want to deploy each microfrontend independently (including the container)
+- Location of child app remoteEntry.js files must be known at build time
+- Many front-end deployment solutions assume you're deploying a single project - we need something that can handle multiple different ones
+- Probably need a CI/CD pipeline of some sort
+- At present, the remoteEntry.js file name is fixed! Need to think about caching issues
